@@ -25,7 +25,7 @@ set -o pipefail
 chmod +x ../../../../../vendor/k8s.io/code-generator/generate-groups.sh
 chmod +x ../../../../../vendor/k8s.io/code-generator/generate-internal-groups.sh
 
-../vendor/k8s.io/code-generator/generate-groups.sh \
+../../../../../vendor/k8s.io/code-generator/generate-groups.sh \
   "deepcopy,client,informer,lister" \
   $(pwd)/../util \
   $(pwd)/../apis \
